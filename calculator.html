@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CALCULATOR</title>
+</head>
+<body>
+<!-- <form style="border: 1px solid black;width: 30%;background-color: bisque;"> -->
+<table style="background-color: bisque;border: 1px solid black;">
+<tr>
+<td>
+<label>First Value</label></td>
+	<td><input type="text" id="txt1"><br></td></tr>
+	<tr><td><label>Second value</label></td>
+	<td><input type="text" id="txt2"></tr>
+	<tr><td><label>Result</label></td>
+	<td><input type="text" id="txt3" readonly></td></tr>
+	<tr>
+	<td><input type="button" value="add" id="add" onclick="addition()"></td>
+	<td><input type="button" value="sub" id="sub" onclick="substraction()"></td>
+	<td><input type="button" value="mul" id="mul" onclick="multiplication()"></td>
+	<td><input type="button" value="divi" id="divi" onclick="division()"></td></tr>
+</table>
+<!-- </form> -->
+<script type="text/javascript">
+	var text1=document.getElementById("txt1");
+	var text2=document.getElementById("txt2");
+	var text3=document.getElementById("txt3");
+	function addition()
+	{
+
+		text3.value=parseInt(text1.value) + parseInt(text2.value);
+	}
+	function substraction()
+	{
+		text3.value=(text1.value-text2.value);
+	}
+	function multiplication()
+	{
+		text3.value=(text1.value*text2.value);
+	}
+	function division()
+	{
+		text3.value=(text1.value/text2.value);
+	}
+</script>
+</body>
+</html>

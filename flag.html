@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flags</title>
+	<style type="text/css">
+		.images img{
+			width: 30%;
+			height: 300px;
+
+		}
+	</style>
+</head>
+<body>
+<div class="images">
+	<img src="us.jpg" id="us">
+	<img src="india.jpg" id="india">
+	<img src="japan.jpg" id="japan">
+</div>
+<input type="text" id="txt">
+<script type="text/javascript">
+	 var india=document.getElementById("india");
+	 var us=document.getElementById("us");
+	 var japan=document.getElementById("japan");
+	 var txt=document.getElementById("txt");
+	 
+	 india.onmouseover=function()
+	 {
+	 	
+	 	txt.value="india";
+	 
+	 }	
+	 us.onmouseover=function()
+	 {
+	 	txt.value="us";
+	 	
+	 }	
+	 japan.onmouseover=function()
+	 {
+	 	txt.value="japan";
+	 	
+	 }	
+	  india.onmouseout=function()
+	 {
+	 	
+	 	txt.value="";
+	 
+	 }	
+	 us.onmouseout=function()
+	 {
+	 	txt.value="";
+	 	
+	 }	
+	 japan.onmouseout=function()
+	 {
+	 	txt.value="";
+	 	
+	 }	
+
+
+	
+</script>
+</body>
+</html>
